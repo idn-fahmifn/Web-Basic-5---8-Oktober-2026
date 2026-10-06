@@ -135,5 +135,32 @@
     border-radius: 16px;
     border: 1px solid #ff0000;
     top: 0;
-    right: -20px;
+    right: 0;
+    font-size: 0.7em;
+    font-weight: 900;
+}
+
+.btn-callus{
+    width: 100px;
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: 12px;
+    font-weight: 800;
+    border-radius: 24px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.btn-callus a{
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+.sticky{
+    background-color: #ff6666;
+    position: sticky;
+    color: #f0f8ff;
+    top: 0;
+    z-index: 100;
 }
