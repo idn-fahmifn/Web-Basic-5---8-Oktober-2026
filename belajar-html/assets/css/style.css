@@ -54,7 +54,7 @@
 
 .card, .card-image, .card-gradient{
     width: 240px;
-    height: 320px;
+    min-height: 320px;
     padding: 12px;
     margin: 36px 16px;
     border: 0.6px solid #3344;
@@ -92,7 +92,7 @@
 }
 
 .card-element{
-    width: 240px;
+    width: 25%;
     padding: 24px;
     border: 0.5px solid #343434;
     background: linear-gradient(to top right, #ff6666, #ff6611);
@@ -108,3 +108,32 @@
     display: inline;
 }
 
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-none{
+    display: none;
+}
+
+.v-hidden{
+    visibility: hidden;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.running{
+    background-color: #f0f8ff;
+    padding: 6px 12px;
+    color: #ff0000;
+    border-radius: 16px;
+    border: 1px solid #ff0000;
+    top: 0;
+    right: -20px;
+}
