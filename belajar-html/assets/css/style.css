@@ -1,12 +1,24 @@
+:root{
+    --color-red: #ff0000;
+    --color-blue: #0088cc;
+    --color-yellow: #ffff00;
+    --color-orange: #ff6611;
+}
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 .square{
-    width: 300px;
-    height: 300px;
-    background-color: #ff6611;
+    width: 140px;
+    background-color: var(--color-orange);
     padding: 24px;
 }
 
 .judul-a, .judul-b{
-    color: #0088cc;
+    color: var(--color-blue);
     font-weight: 800;
 }
 
@@ -29,3 +41,70 @@
     background-color: #ff6666;
     transform: scale(1.1);
 }
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #f0f8ff;
+    border: 0.4px solid #333;
+    padding: 20px;
+    margin: 100px 30px;
+    border-radius: 8px;
+}
+
+.card, .card-image, .card-gradient{
+    width: 240px;
+    height: 320px;
+    padding: 12px;
+    margin: 36px 16px;
+    border: 0.6px solid #3344;
+    border-radius: 16px;
+}
+
+.card{
+    background-color: #f0f8ff;
+}
+
+.card-gradient{
+    background: linear-gradient(to top right, #ff6666, #ff6611);
+}
+
+.card-image{
+    width: 80dvw;
+    height: 40dvh;
+    background: linear-gradient(to bottom, #34343480), 
+    url("https://static.vecteezy.com/system/resources/previews/041/885/560/non_2x/floral-pattern-with-flowers-and-leaves-golden-colors-isolated-backgrounds-for-fashionable-modern-wallpaper-or-textiles-books-cover-digital-interfaces-print-designs-template-materials-paper-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f0f8ff;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container{ 
+    width: 80dvw;
+    padding: 24px;
+    margin: 24px;
+    border: 0.5px solid #343434;
+}
+
+.card-element{
+    width: 240px;
+    padding: 24px;
+    border: 0.5px solid #343434;
+    background: linear-gradient(to top right, #ff6666, #ff6611);
+    color: #f0f8ff;
+    margin: 24px;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
