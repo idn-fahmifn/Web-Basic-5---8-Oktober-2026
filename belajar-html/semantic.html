@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <style>
       :root {
         --color-red: #b80000;
@@ -124,7 +126,7 @@
         padding: 32px 0;
       }
 
-      .produk, .layanan {
+      .produk, .layanan, .gallery, .contact {
         margin: 24px auto;
         text-align: center;
       }
@@ -146,7 +148,7 @@
       .card {
         width: 320px;
         background-color: #ffffff;
-        border: #343434 0.4px solid;
+        border: #34343450 0.4px solid;
         border-radius: 8px;
         padding: 12px;
       }
@@ -157,7 +159,7 @@
 
       #layanan {
         width: 100dvw;
-        height: 50dvh;
+        min-height: 50dvh;
       }
 
       .content-about{
@@ -173,7 +175,71 @@
       .grid-col-4{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 24px 0;
+        gap: 12px;
       }
+
+      #gallery{
+        width: 100dvw;
+        background-color: #e6e6e6;
+      }
+
+      .grid-gallery{
+        width: 80%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 240px);
+        gap: 24px;
+        margin: 48px auto;
+      }
+
+      .card-image{
+        border: #34343450 0.4px solid;
+        border-radius: 8px;
+        background:
+          linear-gradient(to bottom, #11111190),
+          url("https://picsum.photos/320/240");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #contact{
+        width: 100dvw;
+        min-height: 20dvh;
+        background-color: var(--color-red);
+        color: #ffffff;
+      }
+
+      .bg-white{
+        background-color: #e6e6e6;
+      }
+
+      .sosial-media{
+        width: 80%;
+        gap: 32px;
+        margin: 12px auto;
+        display: flex;
+        justify-content: center;
+        padding: 32px 0;
+      }
+
+      .sosial-media div{
+        width: 240px;
+      }
+
+      .footer{
+        width: 100dvw;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+        background-color: #6b0000;
+        color: #ffffff;
+      }
+
+
 
     </style>
   </head>
@@ -281,20 +347,106 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam libero iste veritatis itaque quia aut aliquam maxime nihil eius eligendi error laborum at, quisquam, exercitationem quis. Non, animi odit.</p>
             <div class="d-grid grid-col-4">
                 <div class="card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                    <i data-feather="clock"></i>
+                    <h3>Layanan 24/7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
                 </div>
                 <div class="card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                    <i data-feather="unlock"></i>
+                    <h3>Unilimited Token</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
                 </div>
                 <div class="card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                    <i data-feather="monitor"></i>
+                    <h3>UI Friendly</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
                 </div>
                 <div class="card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                    <i data-feather="cloud"></i>
+                    <h3>Cloud Base</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
                 </div>
             </div>
         </div>
       </section>
+
+      <section id="gallery">
+        <header class="gallery">
+          <h2>Galeri AI Kami</h2>
+          <div class="divider"></div>
+        </header>
+
+
+          <div class="d-grid grid-gallery">
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+            <div class="card-image">
+                <h3>Ai Agentic For Daily</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
+            </div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <header class="contact">
+          <h2>Hubungi Kami</h2>
+          <div class="divider bg-white"></div>
+        </header>
+
+        <div class="sosial-media d-flex">
+            <div class="">
+                <h3>Lokasi Kami</h3>
+                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
+            </div>
+            <div class="">
+                <h3>Lokasi Kami</h3>
+                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
+            </div>
+            <div class="">
+                <h3>Lokasi Kami</h3>
+                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
+            </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="footer">
+            <p>&copy; IDNETWORKERS - Materi Belajar Web Basic 2026</p>
+        </div>
+      </section>
+
     </main>
+
+
+    <script>
+      feather.replace();
+    </script>
+
   </body>
 </html>
