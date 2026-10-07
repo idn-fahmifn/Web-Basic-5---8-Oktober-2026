@@ -19,6 +19,9 @@
         --color-blue: #0088cc;
         --color-yellow: #ffff00;
         --color-orange: #ff6611;
+        --color-red-gradient: #ff6666;
+        --bg-hero-red-gradient: #b8000070;
+        --bg-hero-orange-gradient: #ff661170;
         --font-color: #343434;
       }
 
@@ -26,6 +29,7 @@
         padding: 0;
         margin: 0;
         font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
       }
 
       body {
@@ -39,15 +43,15 @@
         padding: 8px 0;
       }
 
-      .d-flex{
+      .d-flex {
         display: flex;
       }
 
-      .space-around{
+      .space-around {
         justify-content: space-around;
       }
 
-      .align-items-center{
+      .align-items-center {
         align-items: center;
       }
 
@@ -55,19 +59,113 @@
         width: 140px;
       }
 
-      .nav-item{
+      .nav-item {
         display: inline-block;
       }
 
-      .nav-item a{
+      .nav-item a {
         color: #ffeeff;
         text-decoration: none;
         margin-left: 8px;
         transition: 2s ease-in-out;
       }
-      .nav-item a:hover{
+      .nav-item a:hover {
         border-bottom: #ffeeff solid 5px;
       }
+
+      #hero {
+        width: 100dvw;
+        height: 80dvh;
+        background:
+          linear-gradient(to bottom, #11111190),
+          url("https://picsum.photos/1440/800");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .align-center {
+        align-items: center;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .gap-1 {
+        gap: 16px;
+      }
+
+      .d-column {
+        flex-direction: column;
+      }
+
+      .area-title {
+        text-align: center;
+        color: #ffeeff;
+      }
+
+      .btn-explore {
+        background-color: var(--color-red);
+        padding: 8px 16px;
+        border-radius: 8px;
+        color: #ffeeff;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 24px;
+      }
+
+      #produk {
+        width: 100dvw;
+        min-height: 80dvh;
+        padding: 32px 0;
+      }
+
+      .produk, .layanan {
+        margin: 24px auto;
+        text-align: center;
+      }
+
+      .divider {
+        width: 100px;
+        height: 5px;
+        background-color: var(--color-red);
+        margin: 8px auto;
+      }
+
+      .card-flex {
+        width: 80%;
+        margin: auto;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 320px;
+        background-color: #ffffff;
+        border: #343434 0.4px solid;
+        border-radius: 8px;
+        padding: 12px;
+      }
+
+      .card h3 {
+        margin-top: 16px;
+      }
+
+      #layanan {
+        width: 100dvw;
+        height: 50dvh;
+      }
+
+      .content-about{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+
     </style>
   </head>
   <body>
@@ -92,5 +190,88 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section
+        id="hero"
+        class="d-flex justify-center align-center d-column gap-1"
+      >
+        <div class="area-title">
+          <h1>Gail AI Company</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in
+            explicabo totam officiis enim ipsum possimus dignissimos aperiam
+            expedita quam.
+          </p>
+        </div>
+        <a href="" class="btn-explore">Jelajahi AI</a>
+      </section>
+
+      <section id="produk">
+        <header class="produk">
+          <h2>Produk Kami</h2>
+          <div class="divider"></div>
+        </header>
+        <div class="d-flex card-flex justify-center">
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>Generative AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, magnam.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="layanan">
+        <header class="layanan">
+          <h2>Layanan Kami</h2>
+          <div class="divider"></div>
+        </header>
+        <div class="content-about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam libero iste veritatis itaque quia aut aliquam maxime nihil eius eligendi error laborum at, quisquam, exercitationem quis. Non, animi odit.</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
