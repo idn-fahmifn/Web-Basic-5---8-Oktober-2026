@@ -166,6 +166,15 @@
         text-align: center;
       }
 
+      .d-grid{
+        display: grid;
+      }
+
+      .grid-col-4{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 24px 0;
+      }
+
     </style>
   </head>
   <body>
@@ -270,6 +279,20 @@
         </header>
         <div class="content-about">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam libero iste veritatis itaque quia aut aliquam maxime nihil eius eligendi error laborum at, quisquam, exercitationem quis. Non, animi odit.</p>
+            <div class="d-grid grid-col-4">
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                </div>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                </div>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                </div>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vero!
+                </div>
+            </div>
         </div>
       </section>
     </main>
