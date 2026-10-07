@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Company</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --color-red: #b80000;
+        --color-blue: #0088cc;
+        --color-yellow: #ffff00;
+        --color-orange: #ff6611;
+        --font-color: #343434;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        box-sizing: border-box;
+      }
+
+      #header {
+        background: linear-gradient(to right, var(--color-red), #ff0000);
+        width: 100dvw;
+        height: 60px;
+        padding: 8px 0;
+      }
+
+      .d-flex{
+        display: flex;
+      }
+
+      .space-around{
+        justify-content: space-around;
+      }
+
+      .align-items-center{
+        align-items: center;
+      }
+
+      .wide-logo {
+        width: 140px;
+      }
+
+      .nav-item{
+        display: inline-block;
+      }
+
+      .nav-item a{
+        color: #ffeeff;
+        text-decoration: none;
+        margin-left: 8px;
+        transition: 2s ease-in-out;
+      }
+      .nav-item a:hover{
+        border-bottom: #ffeeff solid 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- area navbar -->
+    <header id="header">
+      <div class="d-flex space-around align-items-center">
+        <div class="logo">
+          <img
+            src="https://www.idn.id/wp-content/uploads/2023/01/LOGO-ID-Networkers-IDN.ID-Putih-1024x320.png"
+            class="wide-logo"
+            alt="Logo IDN"
+          />
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="">Beranda</a></li>
+            <li class="nav-item"><a href="">Produk</a></li>
+            <li class="nav-item"><a href="">Layanan</a></li>
+            <li class="nav-item"><a href="">Galeri</a></li>
+            <li class="nav-item"><a href="">Hubungi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
