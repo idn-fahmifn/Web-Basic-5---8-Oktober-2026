@@ -183,8 +183,41 @@ function showDiskon(){
 }
 
 const judul = document.getElementById("title")
+judul.textContent = "Judul diubah"
+judul.style.color = "#0088cc"
+
 const subJudul = document.querySelector(".tagline")
+subJudul.innerHTML = "<span>Ini adalah judul yang diberikan penekanan</span>"
+subJudul.classList.add("bg-blue")
+subJudul.classList.remove("text-bold")
 
 console.log(judul)
 console.log(subJudul)
+
+const counter = document.querySelector(".angka")
+const btnPlus = document.getElementById("add")
+const bntMin = document.getElementById("min")
+let count = 0;
+
+btnPlus.addEventListener("click", () => {
+    count++
+    counter.textContent = count
+}); 
+
+bntMin.addEventListener("click", () => {
+    count--
+    counter.textContent = count
+}); 
+
+async function loadData() {
+    try {
+        const api = "https://6ac75f1e75a4ce3fe721ab20.mockapi.io/api/v1/products";
+        const res = await fetch(api);
+        const data = await res.json();
+        console.log(data);
+
+    } catch (error) {
+        console.log("Ada Error", error)
+    }
+}
 
