@@ -14,6 +14,8 @@
     />
 
     <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
       :root {
@@ -272,8 +274,8 @@
         class="d-flex justify-center align-center d-column gap-1"
       >
         <div class="area-title">
-          <h1>Gail AI Company</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="3000">Gail AI Company</h1>
+          <p data-aos="fade-down">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in
             explicabo totam officiis enim ipsum possimus dignissimos aperiam
             expedita quam.
@@ -452,9 +454,11 @@
     </script>
 
     <script>
+      AOS.init();
+    </script>
 
-      const products = document.getElementById("dataProduk")
-
+    <script>
+      const products = document.getElementById("dataProduk");
 
       async function loadData() {
         try {
@@ -463,10 +467,10 @@
           const res = await fetch(api);
           const data = await res.json();
 
-          products.innerHTML = "<p>Sedang memuat data ...</p>"
-          products.innerHTML = ""
+          products.innerHTML = "<p>Sedang memuat data ...</p>";
+          products.innerHTML = "";
 
-          data.forEach( (listProduct) => {
+          data.forEach((listProduct) => {
             products.innerHTML += `
             <div class="card">
             <img src="https://picsum.photos/320/240" alt="product-image" />
@@ -475,16 +479,14 @@
             ${listProduct.product_desc}
             </p>
           </div>
-            `
-          })
-
+            `;
+          });
         } catch (error) {
           console.log("Ada Error", error);
         }
       }
 
-      loadData()
-
+      loadData();
     </script>
   </body>
 </html>
