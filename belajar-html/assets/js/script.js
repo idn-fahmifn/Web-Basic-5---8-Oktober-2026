@@ -43,15 +43,13 @@ if (nilai > 100) {
   console.log("Nilai melebihi batas, masukan kembali.");
 } else if (nilai < 0) {
   console.log("Nilai yang kamu masukan tidak sesuai.");
-} else if(nilai >= 82) {
-    console.log("Nilai kamu memuaskan!");
-}else if(nilai > 75) {
-    console.log("Nilai kamu baik!");
-}
-else if(nilai >= 60) {
-    console.log("Nilai kamu cukup!");
-}
-else {
+} else if (nilai >= 82) {
+  console.log("Nilai kamu memuaskan!");
+} else if (nilai > 75) {
+  console.log("Nilai kamu baik!");
+} else if (nilai >= 60) {
+  console.log("Nilai kamu cukup!");
+} else {
   console.log("Kamu perlu remedial");
 }
 
@@ -82,3 +80,111 @@ switch (day) {
 }
 
 // hari wajib dari senin - minggu, selain hari itu = error
+
+let nilai1 = 10;
+let nilai2 = 5;
+let nilai3 = "10";
+
+console.log(nilai1 + nilai2);
+console.log(nilai3 + nilai2);
+console.log(nilai3 * nilai2);
+console.log(nama + nilai2);
+
+console.log(nilai3 == nilai1); //true
+console.log(nilai3 === nilai1); //false
+
+console.log(nilai3 != nilai1); //false
+console.log(nilai3 !== nilai1); //true
+
+let kerja = true;
+let libur = false;
+let cuti = false;
+let hiling = true;
+
+//  && ||
+
+console.log(libur || kerja);
+
+for (let i = 0; i <= 20; i++) {
+  if (i == 11) {
+    break;
+  }
+
+  console.log("saya sedang mengulang sebanyak ...", i);
+}
+
+for (let i = 10; i >= 1; i--) {
+  console.log("Hitungan mundur ...", i);
+}
+
+let mobil = ["bmw", "mercedes", "avanza", "xenia", "sigra"];
+mobil.push("fortuner");
+mobil.unshift("BYD");
+
+mobil.shift();
+
+console.log(mobil);
+
+for (let car = 0; car < mobil.length; car++) {
+  console.log("mobil saya ada banyak, yaitu : ", mobil[car]);
+}
+
+let password = "fahmi";
+
+console.log("Password anda sudah sesuai :)");
+
+mobil.forEach((car) => console.log("mobil saya adalah : ", car));
+
+function showPassword() {
+  let input = prompt("Masukan password anda");
+
+  while (password !== input) {
+    alert("Password yang kamu masukan tidak sesuai.");
+    input = prompt("Masukan kembali password anda");
+  }
+}
+
+// arrow function
+let show = () => {
+    // masukan kode untuk di function
+}
+
+function persegiPanjang(panjang, lebar){
+    rumus = panjang * lebar
+    console.log("Luas persegi panjang adalah", rumus )
+}
+
+persegiPanjang(10, 5)
+
+let lingkaran = (r) => {
+    rumus = 3.14 * r * r;
+    return rumus;
+}
+
+let kelilingLingkaran = lingkaran(30);
+console.log(kelilingLingkaran);
+
+// 1. masukan harga
+// 2. Masukan diskon
+
+// ouputnya : harga yang sudah jadi.
+
+let diskon = (harga, persen) => {
+    disc = harga - (harga * (persen / 100))
+    return disc
+}
+
+function showDiskon(){
+    let harga = prompt("Masukan Harga : ");
+    let potongan = prompt("Masukan Porongan (%) : ");
+
+    let hasil = diskon(harga, potongan);
+    alert(`Potongan diskon kamu menjadi : ${hasil}`)
+}
+
+const judul = document.getElementById("title")
+const subJudul = document.querySelector(".tagline")
+
+console.log(judul)
+console.log(subJudul)
+
