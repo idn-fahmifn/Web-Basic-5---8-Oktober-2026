@@ -126,7 +126,10 @@
         padding: 32px 0;
       }
 
-      .produk, .layanan, .gallery, .contact {
+      .produk,
+      .layanan,
+      .gallery,
+      .contact {
         margin: 24px auto;
         text-align: center;
       }
@@ -162,28 +165,28 @@
         min-height: 50dvh;
       }
 
-      .content-about{
+      .content-about {
         width: 80%;
         margin: auto;
         text-align: center;
       }
 
-      .d-grid{
+      .d-grid {
         display: grid;
       }
 
-      .grid-col-4{
+      .grid-col-4 {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 24px 0;
         gap: 12px;
       }
 
-      #gallery{
+      #gallery {
         width: 100dvw;
         background-color: #e6e6e6;
       }
 
-      .grid-gallery{
+      .grid-gallery {
         width: 80%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 240px);
@@ -191,7 +194,7 @@
         margin: 48px auto;
       }
 
-      .card-image{
+      .card-image {
         border: #34343450 0.4px solid;
         border-radius: 8px;
         background:
@@ -206,18 +209,18 @@
         justify-content: center;
       }
 
-      #contact{
+      #contact {
         width: 100dvw;
         min-height: 20dvh;
         background-color: var(--color-red);
         color: #ffffff;
       }
 
-      .bg-white{
+      .bg-white {
         background-color: #e6e6e6;
       }
 
-      .sosial-media{
+      .sosial-media {
         width: 80%;
         gap: 32px;
         margin: 12px auto;
@@ -226,11 +229,11 @@
         padding: 32px 0;
       }
 
-      .sosial-media div{
+      .sosial-media div {
         width: 240px;
       }
 
-      .footer{
+      .footer {
         width: 100dvw;
         display: flex;
         justify-content: center;
@@ -238,9 +241,6 @@
         background-color: #6b0000;
         color: #ffffff;
       }
-
-
-
     </style>
   </head>
   <body>
@@ -287,55 +287,8 @@
           <h2>Produk Kami</h2>
           <div class="divider"></div>
         </header>
-        <div class="d-flex card-flex justify-center">
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/320/240" alt="product-image" />
-            <h3>Generative AI</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique, magnam.
-            </p>
-          </div>
+        <div class="d-flex card-flex justify-center" id="dataProduk">
+          <!-- data diload dari js -->
         </div>
       </section>
       <section id="layanan">
@@ -344,29 +297,46 @@
           <div class="divider"></div>
         </header>
         <div class="content-about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam libero iste veritatis itaque quia aut aliquam maxime nihil eius eligendi error laborum at, quisquam, exercitationem quis. Non, animi odit.</p>
-            <div class="d-grid grid-col-4">
-                <div class="card">
-                    <i data-feather="clock"></i>
-                    <h3>Layanan 24/7</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
-                </div>
-                <div class="card">
-                    <i data-feather="unlock"></i>
-                    <h3>Unilimited Token</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
-                </div>
-                <div class="card">
-                    <i data-feather="monitor"></i>
-                    <h3>UI Friendly</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
-                </div>
-                <div class="card">
-                    <i data-feather="cloud"></i>
-                    <h3>Cloud Base</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil!</p>
-                </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam
+            libero iste veritatis itaque quia aut aliquam maxime nihil eius
+            eligendi error laborum at, quisquam, exercitationem quis. Non, animi
+            odit.
+          </p>
+          <div class="d-grid grid-col-4">
+            <div class="card">
+              <i data-feather="clock"></i>
+              <h3>Layanan 24/7</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                nihil!
+              </p>
             </div>
+            <div class="card">
+              <i data-feather="unlock"></i>
+              <h3>Unilimited Token</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                nihil!
+              </p>
+            </div>
+            <div class="card">
+              <i data-feather="monitor"></i>
+              <h3>UI Friendly</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                nihil!
+              </p>
+            </div>
+            <div class="card">
+              <i data-feather="cloud"></i>
+              <h3>Cloud Base</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                nihil!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -376,41 +346,64 @@
           <div class="divider"></div>
         </header>
 
-
-          <div class="d-grid grid-gallery">
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
-            <div class="card-image">
-                <h3>Ai Agentic For Daily</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, distinctio?</p>
-            </div>
+        <div class="d-grid grid-gallery">
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
           </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+          <div class="card-image">
+            <h3>Ai Agentic For Daily</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
+              distinctio?
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
@@ -420,33 +413,78 @@
         </header>
 
         <div class="sosial-media d-flex">
-            <div class="">
-                <h3>Lokasi Kami</h3>
-                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
-            </div>
-            <div class="">
-                <h3>Lokasi Kami</h3>
-                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
-            </div>
-            <div class="">
-                <h3>Lokasi Kami</h3>
-                <p>Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos 11480</p>
-            </div>
+          <div class="">
+            <h3>Lokasi Kami</h3>
+            <p>
+              Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec.
+              Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos
+              11480
+            </p>
+          </div>
+          <div class="">
+            <h3>Lokasi Kami</h3>
+            <p>
+              Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec.
+              Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos
+              11480
+            </p>
+          </div>
+          <div class="">
+            <h3>Lokasi Kami</h3>
+            <p>
+              Jl. Pal Merah Utara II No.245, RT.9/RW.16, Palmerah, Kec.
+              Palmerah, Kota Jakarta Barat, DKI Jakarta, Indonesia, Kode Pos
+              11480
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="footer">
         <div class="footer">
-            <p>&copy; IDNETWORKERS - Materi Belajar Web Basic 2026</p>
+          <p>&copy; IDNETWORKERS - Materi Belajar Web Basic 2026</p>
         </div>
       </section>
-
     </main>
-
 
     <script>
       feather.replace();
     </script>
 
+    <script>
+
+      const products = document.getElementById("dataProduk")
+
+
+      async function loadData() {
+        try {
+          const api =
+            "https://6ac75f1e75a4ce3fe721ab20.mockapi.io/api/v1/products";
+          const res = await fetch(api);
+          const data = await res.json();
+
+          products.innerHTML = "<p>Sedang memuat data ...</p>"
+          products.innerHTML = ""
+
+          data.forEach( (listProduct) => {
+            products.innerHTML += `
+            <div class="card">
+            <img src="https://picsum.photos/320/240" alt="product-image" />
+            <h3>${listProduct.product_name}</h3>
+            <p>
+            ${listProduct.product_desc}
+            </p>
+          </div>
+            `
+          })
+
+        } catch (error) {
+          console.log("Ada Error", error);
+        }
+      }
+
+      loadData()
+
+    </script>
   </body>
 </html>
